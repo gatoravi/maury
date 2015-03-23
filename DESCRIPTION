@@ -1,0 +1,18 @@
+Package: maury
+Title: Quantify relatedness of samples
+Version: 0.0.0.9000
+Authors@R: person("Avinash", "Ramu", , "trackavinash@gmail.com", role = c("aut", "cre"))
+Description: Maury can be used to quantify relatedness of
+    multiple samples by using Next Generation Sequencing data.
+    This is done by looking at allele-frequency at sites of
+    common polymorphisms. Maury can be used in a multitude
+    of applications, for example detecting tumor/normal
+    sample-swaps.
+Depends: R (>= 3.0.2)
+Imports: Rsamtools (>= 1.18),
+    VariantAnnotation (>= 1.12.9),
+    GenomicRanges (>= 1.18.4)
+License: MIT
+License: MIT
+LazyData: true
+
