@@ -1,0 +1,88 @@
+##fileformat=VCFv4.0
+##fileDate=20111104
+##source=dbSNP
+##dbSNP_BUILD_ID=135
+##reference=GRCh37.3
+##phasing=partial
+##variationPropertyDocumentationUrl=ftp://ftp.ncbi.nlm.nih.gov/snp/specs/dbSNP_BitField_latest.pdf	
+##INFO=<ID=RSPOS,Number=1,Type=Integer,Description="Chr position reported in dbSNP">
+##INFO=<ID=RV,Number=0,Type=Flag,Description="RS orientation is reversed">
+##INFO=<ID=NS,Number=1,Type=Integer,Description="Number of Samples With Data">
+##INFO=<ID=AF,Number=.,Type=Float,Description="Allele Frequency, for each ALT allele, in the same order as listed">
+##INFO=<ID=VP,Number=1,Type=String,Description="Variation Property">
+##INFO=<ID=GENEINFO,Number=1,Type=String,Description="Pairs each of gene symbol:gene id.  The gene symbol and id are delimited by a colon (:) and each pair is delimited by a vertical bar (|)">
+##INFO=<ID=dbSNPBuildID,Number=1,Type=Integer,Description="First dbSNP Build for RS">
+##INFO=<ID=SAO,Number=1,Type=Integer,Description="Variant Allele Origin: 0 - unspecified, 1 - Germline, 2 - Somatic, 3 - Both">
+##INFO=<ID=SSR,Number=1,Type=Integer,Description="Variant Suspect Reason Code, 0 - unspecified, 1 - Paralog, 2 - byEST, 3 - Para_EST, 4 - oldAlign, 5 - other">
+##INFO=<ID=SCS,Number=1,Type=Integer,Description="Variant Clinical Significance, 0 - unknown, 1 - untested, 2 - non-pathogenic, 3 - probable-non-pathogenic, 4 - probable-pathogenic, 5 - pathogenic, 6 - drug-response, 7 - histocompatibility, 255 - other">
+##INFO=<ID=GMAF,Number=1,Type=Float,Description="Global Minor Allele Frequency [0, 0.5]; global population is 1000GenomesProject phase 1 genotype data from 629 individuals, released in the 08-04-2010 dataset">
+##INFO=<ID=WGT,Number=1,Type=Integer,Description="Weight, 00 - unmapped, 1 - weight 1, 2 - weight 2, 3 - weight 3 or more">
+##INFO=<ID=VC,Number=1,Type=String,Description="Variation Class">
+##INFO=<ID=CLN,Number=0,Type=Flag,Description="Variant is Clinical(LSDB,OMIM,TPA,Diagnostic)">
+##INFO=<ID=PM,Number=0,Type=Flag,Description="Variant is Precious(Clinical,Pubmed Cited)">
+##INFO=<ID=TPA,Number=0,Type=Flag,Description="Provisional Third Party Annotation(TPA) (currently rs from PHARMGKB who will give phenotype data)">
+##INFO=<ID=PMC,Number=0,Type=Flag,Description="Links exist to PubMed Central article">
+##INFO=<ID=S3D,Number=0,Type=Flag,Description="Has 3D structure - SNP3D table">
+##INFO=<ID=SLO,Number=0,Type=Flag,Description="Has SubmitterLinkOut - From SNP->SubSNP->Batch.link_out">
+##INFO=<ID=NSF,Number=0,Type=Flag,Description="Has non-synonymous frameshift A coding region variation where one allele in the set changes all downstream amino acids. FxnClass = 44">
+##INFO=<ID=NSM,Number=0,Type=Flag,Description="Has non-synonymous missense A coding region variation where one allele in the set changes protein peptide. FxnClass = 42">
+##INFO=<ID=NSN,Number=0,Type=Flag,Description="Has non-synonymous nonsense A coding region variation where one allele in the set changes to STOP codon (TER). FxnClass = 41">
+##INFO=<ID=REF,Number=0,Type=Flag,Description="Has reference A coding region variation where one allele in the set is identical to the reference sequence. FxnCode = 8">
+##INFO=<ID=SYN,Number=0,Type=Flag,Description="Has synonymous A coding region variation where one allele in the set does not change the encoded amino acid. FxnCode = 3">
+##INFO=<ID=U3,Number=0,Type=Flag,Description="In 3' UTR Location is in an untranslated region (UTR). FxnCode = 53">
+##INFO=<ID=U5,Number=0,Type=Flag,Description="In 5' UTR Location is in an untranslated region (UTR). FxnCode = 55">
+##INFO=<ID=ASS,Number=0,Type=Flag,Description="In acceptor splice site FxnCode = 73">
+##INFO=<ID=DSS,Number=0,Type=Flag,Description="In donor splice-site FxnCode = 75">
+##INFO=<ID=INT,Number=0,Type=Flag,Description="In Intron FxnCode = 6">
+##INFO=<ID=R3,Number=0,Type=Flag,Description="In 3' gene region FxnCode = 13">
+##INFO=<ID=R5,Number=0,Type=Flag,Description="In 5' gene region FxnCode = 15">
+##INFO=<ID=OTH,Number=0,Type=Flag,Description="Has other variant with exactly the same set of mapped positions on NCBI refernce assembly.">
+##INFO=<ID=CFL,Number=0,Type=Flag,Description="Has Assembly conflict. This is for weight 1 and 2 variant that maps to different chromosomes on different assemblies.">
+##INFO=<ID=ASP,Number=0,Type=Flag,Description="Is Assembly specific. This is set if the variant only maps to one assembly">
+##INFO=<ID=MUT,Number=0,Type=Flag,Description="Is mutation (journal citation, explicit fact): a low frequency variation that is cited in journal and other reputable sources">
+##INFO=<ID=VLD,Number=0,Type=Flag,Description="Is Validated.  This bit is set if the variant has 2+ minor allele count based on frequency or genotype data.">
+##INFO=<ID=G5A,Number=0,Type=Flag,Description=">5% minor allele frequency in each and all populations">
+##INFO=<ID=G5,Number=0,Type=Flag,Description=">5% minor allele frequency in 1+ populations">
+##INFO=<ID=HD,Number=0,Type=Flag,Description="Marker is on high density genotyping kit (50K density or greater).  The variant may have phenotype associations present in dbGaP.">
+##INFO=<ID=GNO,Number=0,Type=Flag,Description="Genotypes available. The variant has individual genotype (in SubInd table).">
+##INFO=<ID=KGPilot1,Number=0,Type=Flag,Description="1000 Genome discovery(pilot1) 2009">
+##INFO=<ID=KGPilot123,Number=0,Type=Flag,Description="1000 Genome discovery all pilots 2010(1,2,3)">
+##INFO=<ID=KGVAL,Number=0,Type=Flag,Description="1000 Genome validated by second method">
+##INFO=<ID=KGPROD,Number=0,Type=Flag,Description="1000 Genome production phase">
+##INFO=<ID=PH1,Number=0,Type=Flag,Description="Phase 1 genotyped: filtered, non-redundant">
+##INFO=<ID=PH2,Number=0,Type=Flag,Description="Phase 2 genotyped: filtered, non-redundant">
+##INFO=<ID=PH3,Number=0,Type=Flag,Description="Phase 3 genotyped: filtered, non-redundant">
+##INFO=<ID=CDA,Number=0,Type=Flag,Description="Variation is interrogated in a clinical diagnostic assay">
+##INFO=<ID=LSD,Number=0,Type=Flag,Description="Submitted from a locus-specific database">
+##INFO=<ID=MTP,Number=0,Type=Flag,Description="Microattribution/third-party annotation(TPA:GWAS,PAGE)">
+##INFO=<ID=OM,Number=0,Type=Flag,Description="Has OMIM/OMIA">
+##INFO=<ID=NOC,Number=0,Type=Flag,Description="Contig allele not present in variant allele list. The reference sequence allele at the mapped position is not present in the variant allele list, adjusted for orientation.">
+##INFO=<ID=WTD,Number=0,Type=Flag,Description="Is Withdrawn by submitter If one member ss is withdrawn by submitter, then this bit is set.  If all member ss' are withdrawn, then the rs is deleted to SNPHistory">
+##INFO=<ID=NOV,Number=0,Type=Flag,Description="Rs cluster has non-overlapping allele sets. True when rs set has more than 2 alleles from different submissions and these sets share no alleles in common.">
+##INFO=<ID=GCF,Number=0,Type=Flag,Description="Has Genotype Conflict Same (rs, ind), different genotype.  N/N is not included.">
+##FILTER=<ID=NC,Description="Inconsistent Genotype Submission For At Least One Sample">
+#CHROM	POS	ID	REF	ALT	QUAL	FILTER	INFO
+1	67861520	rs2229546	C	A	.	.	RSPOS=67861520;GMAF=0.448811700182815;dbSNPBuildID=98;SSR=0;SAO=0;VP=050128000000070512000101;GENEINFO=IL12RB2:3595;WGT=0;VC=SNV;PM;PMC;SLO;VLD;G5A;G5;HD;GNO;KGPilot123;PH2;GCF
+1	179520506	rs1410592	G	A	.	.	RSPOS=179520506;GMAF=0.424588665447898;dbSNPBuildID=88;SSR=0;SAO=0;VP=050300000000050512000101;GENEINFO=NPHS2:7827|AXDND1:126859;WGT=0;VC=SNV;S3D;SLO;VLD;G5;HD;GNO;KGPilot123;PH2;GCF
+2	169789016	rs497692	T	C	.	.	RSPOS=169789016;RV;GMAF=0.478062157221207;dbSNPBuildID=83;SSR=0;SAO=0;VP=050310000000070512000100;GENEINFO=ABCB11:8647;WGT=0;VC=SNV;TPA;S3D;SLO;VLD;G5A;G5;HD;GNO;KGPilot123;PH2
+2	227896976	rs10203363	C	T	.	.	RSPOS=227896976;GMAF=0.45018281535649;dbSNPBuildID=119;SSR=0;SAO=0;VP=050100000000070512000100;GENEINFO=COL4A4:1286;WGT=0;VC=SNV;SLO;VLD;G5A;G5;HD;GNO;KGPilot123;PH2
+3	4403767	rs2819561	A	G	.	.	RSPOS=4403767;RV;GMAF=0.335466179159049;dbSNPBuildID=100;SSR=0;SAO=0;VP=050100000000070512000100;GENEINFO=SUMF1:285362;WGT=0;VC=SNV;SLO;VLD;G5A;G5;HD;GNO;KGPilot123;PH2
+4	5749904	rs4688963	T	C	.	.	RSPOS=5749904;RV;GMAF=0.463893967093236;dbSNPBuildID=111;SSR=0;SAO=0;VP=050128000000070512000100;GENEINFO=EVC:2121;WGT=0;VC=SNV;PM;PMC;SLO;VLD;G5A;G5;HD;GNO;KGPilot123;PH2
+5	82834630	rs309557	T	C	.	.	RSPOS=82834630;RV;GMAF=0.479890310786106;dbSNPBuildID=79;SSR=0;SAO=0;VP=050100000000070512000100;GENEINFO=VCAN:1462;WGT=0;VC=SNV;SLO;VLD;G5A;G5;HD;GNO;KGPilot123;PH2
+6	146755140	rs2942	G	A	.	.	RSPOS=146755140;GMAF=0.478976234003656;dbSNPBuildID=36;SSR=0;SAO=0;VP=050100000000070512000100;GENEINFO=GRM1:2911;WGT=0;VC=SNV;SLO;VLD;G5A;G5;HD;GNO;KGPilot123;PH2
+7	48450157	rs17548783	T	C	.	.	RSPOS=48450157;GMAF=0.48400365630713;dbSNPBuildID=123;SSR=0;SAO=0;VP=050300000000070512000101;GENEINFO=ABCA13:154664;WGT=0;VC=SNV;S3D;SLO;VLD;G5A;G5;HD;GNO;KGPilot123;PH2;GCF
+8	94935937	rs4735258	T	C	.	.	RSPOS=94935937;GMAF=0.499542961608775;dbSNPBuildID=111;SSR=0;SAO=0;VP=050100000000070512000100;GENEINFO=PDP1:54704;WGT=0;VC=SNV;SLO;VLD;G5A;G5;HD;GNO;KGPilot123;PH2
+9	100190780	rs1381532	A	G	.	.	RSPOS=100190780;RV;GMAF=0.43235831809872;dbSNPBuildID=88;SSR=0;SAO=0;VP=050300000000070512000100;GENEINFO=TDRD7:23424;WGT=0;VC=SNV;S3D;SLO;VLD;G5A;G5;HD;GNO;KGPilot123;PH2
+10	100219314	rs10883099	G	A	.	.	RSPOS=100219314;GMAF=0.457495429616088;dbSNPBuildID=120;SSR=0;SAO=0;VP=050100000000070512000100;GENEINFO=HPSE2:60495;WGT=0;VC=SNV;SLO;VLD;G5A;G5;HD;GNO;KGPilot123;PH2
+11	16133413	rs4617548	A	G	.	.	RSPOS=16133413;GMAF=0.466636197440585;dbSNPBuildID=111;SSR=0;SAO=0;VP=050100000000070512000100;GENEINFO=SOX6:55553;WGT=0;VC=SNV;SLO;VLD;G5A;G5;HD;GNO;KGPilot123;PH2
+12	993930	rs7300444	C	T	.	.	RSPOS=993930;GMAF=0.436471663619744;dbSNPBuildID=116;SSR=0;SAO=0;VP=050100000000070512000100;GENEINFO=WNK1:65125;WGT=0;VC=SNV;SLO;VLD;G5A;G5;HD;GNO;KGPilot123;PH2
+13	39433606	rs9532292	A	G	.	.	RSPOS=39433606;GMAF=0.404021937842779;dbSNPBuildID=119;SSR=0;SAO=0;VP=050100000000070512000101;GENEINFO=FREM2:341640;WGT=0;VC=SNV;SLO;VLD;G5A;G5;HD;GNO;KGPilot123;PH2;GCF
+14	50769717	rs2297995	G	A	.	.	RSPOS=50769717;GMAF=0.425502742230347;dbSNPBuildID=100;SSR=0;SAO=0;VP=050100000000070512000100;GENEINFO=L2HGDH:79944;WGT=0;VC=SNV;SLO;VLD;G5A;G5;HD;GNO;KGPilot123;PH2
+15	34528948	rs4577050	G	A	.	.	RSPOS=34528948;GMAF=0.393510054844607;dbSNPBuildID=111;SSR=0;SAO=0;VP=050100000000070512000101;GENEINFO=SLC12A6:9990;WGT=0;VC=SNV;SLO;VLD;G5A;G5;HD;GNO;KGPilot123;PH2;GCF
+16	70303580	rs2070203	G	A	.	.	RSPOS=70303580;RV;GMAF=0.462065813528336;dbSNPBuildID=96;SSR=0;SAO=0;VP=050300000000070512000100;GENEINFO=AARS:16;WGT=0;VC=SNV;S3D;SLO;VLD;G5A;G5;HD;GNO;KGPilot123;PH2
+17	71197748	rs1037256	G	A	.	.	RSPOS=71197748;GMAF=0.441042047531993;dbSNPBuildID=86;SSR=0;SAO=0;VP=050100000000070512000100;GENEINFO=COG1:9382;WGT=0;VC=SNV;SLO;VLD;G5A;G5;HD;GNO;KGPilot123;PH2
+18	21413869	rs9962023	T	C	.	.	RSPOS=21413869;GMAF=0.338665447897623;dbSNPBuildID=119;SSR=0;SAO=0;VP=050100000000070512000100;GENEINFO=LAMA3:3909;WGT=0;VC=SNV;SLO;VLD;G5A;G5;HD;GNO;KGPilot123;PH2
+19	10267077	rs2228611	T	C	.	.	RSPOS=10267077;RV;GMAF=0.464808043875686;dbSNPBuildID=98;SSR=0;SAO=0;VP=050328000000050512000100;GENEINFO=DNMT1:1786;WGT=0;VC=SNV;PM;PMC;S3D;SLO;VLD;G5;HD;GNO;KGPilot123;PH2
+20	6100088	rs10373	A	G	.	.	RSPOS=6100088;RV;GMAF=0.485374771480804;dbSNPBuildID=52;SSR=0;SAO=0;VP=050300000000070512000100;GENEINFO=FERMT1:55612;WGT=0;VC=SNV;S3D;SLO;VLD;G5A;G5;HD;GNO;KGPilot123;PH2
+21	44323590	rs4148973	T	G	.	.	RSPOS=44323590;GMAF=0.476691042047532;dbSNPBuildID=110;SSR=0;SAO=0;VP=050128000000070512000101;GENEINFO=NDUFV3:4731;WGT=0;VC=SNV;PM;PMC;SLO;VLD;G5A;G5;HD;GNO;KGPilot123;PH2;GCF
+22	21141300	rs4675	T	C	.	.	RSPOS=21141300;GMAF=0.454296160877514;dbSNPBuildID=52;SSR=0;SAO=0;VP=050300000000050512000100;GENEINFO=SERPIND1:3053|PI4KA:5297;WGT=0;VC=SNV;S3D;SLO;VLD;G5;HD;GNO;KGPilot123;PH2
