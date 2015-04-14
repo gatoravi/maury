@@ -4,17 +4,37 @@
 \alias{maury}
 \title{Compare two samples' genotypes across a list of given positions}
 \usage{
-maury()
+maury(sample, vcf, bam1, bam2, op_f = "", min_rd = 20, seq_error = 0.001,
+  min_mq = 20, min_bq = 20)
 }
 \arguments{
-\item{sites}{List of sites to compare genotypes against.}
+\item{vcf}{VCF with list of sites to compare genotypes against.}
+
+\item{bam1}{BAM of first sample.}
+
+\item{bam2}{BAM of second sample.}
+
+\item{op_f}{Optional output_file to write metrics to output file}
+
+\item{min_rd}{Optional minimum read-depth for read-counting [20]}
+
+\item{seq_error}{Optional sequencing error rate for likelihood calculations [0.001]}
+
+\item{min_mq}{Optional minimum mapping quality for read-counting [20]}
+
+\item{min_bq}{Optional minimum base quality for read-counting [20]}
+}
+\value{
+data-frame with four columns -
+   sample-name, number of matching GTs, total number of GTs,
+   proportion of matching GT's
 }
 \description{
 Compare two samples' genotypes across a list of given positions
 }
 \examples{
 \donttest{
-maury(sites = "optimized1.vcf", bam1 = "sample1.bam", bam2 = "sample2.bam")
+maury(vcf = "optimized1.vcf", bam1 = "sample1.bam", bam2 = "sample2.bam")
 }
 }
 
