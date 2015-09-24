@@ -19,6 +19,9 @@ Maury can be used in a multitude
 of applications, for example detecting tumor/normal
 sample-swaps.
 
+##Example analysis
+For an example analysis using maury, please refer to
+https://github.com/gatoravi/maury/wiki
 
 ##Install
 ```r
@@ -38,7 +41,4 @@ maury("test_sample", vcf, bam1, bam2,
     min_rd = 0, min_mq = 0, min_bq = 0)
 ```
 
-##Example output
-For an example analysis using maury, please refer to
-https://github.com/gatoravi/maury/wiki
 
