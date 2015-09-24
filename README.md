@@ -5,10 +5,11 @@ Maury is an R package that can be used to quantify relatedness of
 multiple samples from Next Generation Sequencing data(NGS).
 
 Maury works by looking at genotypes at sites of
-common polymorphisms. Maury outputs the proportion of
-genotypes that are concordant between a pair of samples. It uses
-Maximum Likelihood Estimation(MLE) to infer the genotype of a sample at a particular
-locus by looking at the read depths of the reference and alternate alleles.
+common polymorphisms. It uses Maximum Likelihood Estimation(MLE)
+to infer the genotype of a sample at a particular
+locus by looking at the read depths of the reference and 
+alternate alleles Maury outputs the proportion of
+genotypes that are concordant between a pair of samples. .
 
 A sample VCF with a recommended list of common polymorphisms
 using information from Pengelly et al. (A SNP profiling panel for sample tracking in whole-exome sequencing studies.
