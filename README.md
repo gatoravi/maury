@@ -24,12 +24,14 @@ sample-swaps.
 For a sample analysis using maury, please refer to
 https://github.com/gatoravi/maury/wiki
 
-##Install
+## Install
+
 ```r
 devtools::install_github("gatoravi/maury")
 ```
 
-##Example Usage
+## Example Usage
+
 ```r
 library(maury)
 bam1 <- system.file("extdata", 'ex1.bam',
