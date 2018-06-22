@@ -1,6 +1,7 @@
-#Maury
+# Maury
 
-##Introduction
+## Introduction
+
 Maury is an R package that can be used to quantify relatedness of
 multiple samples from Next Generation Sequencing data(NGS).
 
@@ -19,8 +20,8 @@ Maury can be used in a multitude
 of applications, for example detecting tumor/normal
 sample-swaps.
 
-##Example analysis
-For an example analysis using maury, please refer to
+## Example analysis
+For a sample analysis using maury, please refer to
 https://github.com/gatoravi/maury/wiki
 
 ##Install
